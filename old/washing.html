@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bedroom.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/navigationbar.css">
+
+
+    <title>Home Page</title>
+   </head>
+   <style>
+   hr{
+      height: 2px;
+      background-color: #bfbeb9;
+      border: none;
+      width: 1150px;
+      margin-left: 120px;
+  }</style>
+<body>
+   <nav class="navbar">
+      <!-- LOGO -->
+      <div class="logo">MUO</div>
+      <div class="loginimg"><a href="/"><img src="./photo/person.png"style="width:7%"></a></div>
+      <div class="search">
+        <form action="#">
+            <input type="text"
+                   placeholder="   جستجو"dir="rtl"
+                   name="search">
+            <button>
+                <i class="fa fa-search"
+                   style="font-size: 18px;">
+                </i>
+            </button>
+        </form>
+    </div>
+      <!-- NAVIGATION MENU -->
+      <ul class="nav-links">
+  
+        <!-- USING CHECKBOX HACK -->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+  
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+  
+          <li><a href="/">درباره ما</a></li>
+  
+          <li class="services">
+            <a href="/">فروش</a>
+  
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown">
+              <li><a href="/">صوتی و تحریر</a></li>
+              <li><a href="/">Dropdown 2</a></li>
+              <li><a href="/">Dropdown 2</a></li>
+              <li><a href="/">Dropdown 3</a></li>
+              <li><a href="/">Dropdown 4</a></li>
+            </ul>
+  
+          </li>
+  
+          <li><a href="/">دسته بندی کالا</a></li>
+          <li><a href="/">خانه</a></li>
+        </div>
+      </ul>
+    </nav> 
+
+ 
+ <button type="button" class="collapsible" style="background-image: url(./photo/pages/whasing.png);">ابزار شست‌وشو</button>
+ <div class="content">
+   <div class="open-wrap">
+
+      <input type="checkbox" name="open-btn" id="open-deli-11" class="open-input">
+      <div class="open-contents">
+        <label for="open-deli-11" class="open-label">
+            ماشین لباسشویی
+        </label>
+        <div class="open-contents__inner">
+          
+
+
+
+
+
+
+
+
+         <form class="form-style-9"  action="washing.php" method="post">
+            <ul>
+            <li>
+               <label for="field1" style="float: right;">ابعاد </label> <input type="text" name="field1"  id="field1" class="field-style field-split align-right "  />
+               <label for="field2"style="float: right;">رنگ</label> <input type="text" name="field2"   id="field2" class="field-style field-split align-right" />
+                <label for="field3"style="float: right;">وزن</label> <input type="text" name="field3"   id="field3" class="field-style field-split align-right"  />
+                <label for="field4"style="float: right;">برند</label>  <input type="text" name="field4"   id="field4" class="field-style field-split align-right" />
+                <label for="field5"style="float: right;">ظرفیت دیگ</label> <input type="text" name="field5"   id="field5" class="field-style field-split align-right" />
+ </li>
+            <li>
+                <label for="field6"style="float: right;">میزان صدای آبکشی</label> <input type="text" name="field6"   id="field6" class="field-style field-split align-right" />
+                <label for="field7" style="float: right;">میزان صدا</label> <input type="text" name="field7"   id="field7" class="field-style field-split align-right "  />
+               <label for="field8" style="float: right;">جهت بازشدن در</label> <input type="text" name="field8"   id="field8" class="field-style field-split align-right "  />
+               <label for="field9" style="float: right;">سرعت چرخش موتور</label> <input type="text" name="field9"   id="field9" class="field-style field-split align-right "  />
+              </li>
+              <li>
+               <label for="field10" style="float: right;">نوع مخزن</label> <input type="text" name="field10"   id="field10" class="field-style field-split align-right "  />
+               <label for="field11" style="float: right;">رده مصرف انرژی</label> <input type="text" name="field11"   id="field11" class="field-style field-split align-right "  />
+                    
+               <label for="field12"style="float: right;">تعداد مورد نیاز</label> <input type="number" name="field12"   id="field12" class="field-style field-split align-right" />
+               <label for="field14" style="float: right; ">اولویت</label>
+               <select  name="field14" id="field14" style="font-size:16px; font-family: 'Bnazanin';"class=" field-style field-split align-right">
+                  <option value=""dir="rtl">انتخاب اولویت</option>
+                  <option value="1"dir="rtl">اولویت اول</option>
+                  <option value="2"dir="rtl">اولویت دوم</option>
+                  <option value="3"dir="rtl">اولویت سوم</option>
+               </select>
+            </li>
+
+       
+           <li>
+               <label for="field13"style="float: right;">توضیحات</label><input type="text" name="field13"  id="field13"   class="field-style field-full align-none align-right" style="direction: rtl;" />
+            </li>
+            <li>
+            <input type="submit" value="ذخیره" name="submit1" id="submit1" />
+            </li>
+            </ul>
+            </form>
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <hr/>
+      <input type="checkbox" name="open-btn" id="open-deli-12" class="open-input">
+      <div class="open-contents">
+        <label for="open-deli-12" class="open-label">
+            ماشین ظرفشویی
+        </label>
+        <div class="open-contents__inner">
+          
+            <form class="form-style-9" action="washing.php" method="post">
+                <ul>
+                <li>
+                   <label for="field1" style="float: right;">ابعاد </label> <input type="text" name="field1"   id="field1" class="field-style field-split align-right "  />
+                   <label for="field2"style="float: right;">رنگ</label> <input type="text" name="field2"   id="field2" class="field-style field-split align-right" />
+                    <label for="field3"style="float: right;">وزن</label> <input type="text" name="field3"   id="field3" class="field-style field-split align-right"  />
+                    <label for="field4"style="float: right;">برند</label>  <input type="text" name="field4"   id="field4" class="field-style field-split align-right" />
+                    <label for="field5"style="float: right;">ظرفیت به نفر</label> <input type="text" name="field5"   id="field5" class="field-style field-split align-right" />
+     </li>
+                <li>
+                    <label for="field6"style="float: right;">ظرفیت</label> <input type="text" name="field6"   id="field6" class="field-style field-split align-right" />
+                    <label for="field7" style="float: right;">تعداد سبد</label> <input type="text" name="field7"   id="field7" class="field-style field-split align-right "  />
+                   <label for="field8" style="float: right;">تعداد برنامه های شست‌وشو</label> <input type="text" name="field8"   id="field8" class="field-style field-split align-right "  />
+                   <label for="field9" style="float: right;">متوسط میزان مصرف آب در هر شست‌وشو</label> <input type="text" name="field9"   id="field9" class="field-style field-split align-right "  />
+                  </li>
+                  <li>
+                   <label for="field10" style="float: right;">میزان صدا</label> <input type="text" name="field10"   id="field10" class="field-style field-split align-right "  />
+                   <label for="field11" style="float: right;">رده مصرف انرژی</label> <input type="text" name="field11"   id="field11" class="field-style field-split align-right "  />
+                        
+                   <label for="field12"style="float: right;">تعداد مورد نیاز</label> <input type="number" name="field12"   id="field12" class="field-style field-split align-right" />
+                   <label for="field14" style="float: right; ">اولویت</label>
+                   <select  name="field14" id="field14" style="font-size:16px; font-family: 'Bnazanin';"class=" field-style field-split align-right">
+                      <option value=""dir="rtl">انتخاب اولویت</option>
+                      <option value="1"dir="rtl">اولویت اول</option>
+                      <option value="2"dir="rtl">اولویت دوم</option>
+                      <option value="3"dir="rtl">اولویت سوم</option>
+                   </select>
+                </li>
+    
+           
+               <li>
+                   <label for="field13"style="float: right;">توضیحات</label><input type="text" name="field13"  id="field13"   class="field-style field-full align-none align-right" style="direction: rtl;" />
+                </li>
+                <li>
+                <input type="submit" value="ذخیره" name="submit2" id="submit2" />
+                </li>
+                </ul>
+                </form>
+    
+      
+        </div>
+      </div>
+      <hr>
+
+      <input type="checkbox" name="open-btn" id="open-deli-13" class="open-input">
+      <div class="open-contents">
+        <label for="open-deli-13" class="open-label">
+            بخارشوی
+        </label>
+        <div class="open-contents__inner">
+          
+
+
+            <form class="form-style-9" action="washing.php" method="post">
+                <ul>
+                <li>
+                   <label for="field1" style="float: right;">ابعاد </label> <input type="text" name="field1"   id="field1" class="field-style field-split align-right "  />
+                   <label for="field2"style="float: right;">رنگ</label> <input type="text" name="field2"   id="field2" class="field-style field-split align-right" />
+                    <label for="field3"style="float: right;">وزن</label> <input type="text" name="field3"   id="field3" class="field-style field-split align-right"  />
+                    <label for="field4"style="float: right;">برند</label>  <input type="text" name="field4"   id="field4" class="field-style field-split align-right" />
+                    <label for="field5"style="float: right;">ظرفیت مخزن آب</label> <input type="text" name="field5"   id="field5" class="field-style field-split align-right" />
+             </li>
+                <li>
+                    <label for="field6"style="float: right;">مدت زمان قابل استفاده</label> <input type="text" name="field6"   id="field6" class="field-style field-split align-right" />
+                    <label for="field7" style="float: right;">مدت زمان مورد نیاز برای تولید بخار</label> <input type="text" name="field7"   id="field7" class="field-style field-split align-right "  />
+                   <label for="field8" style="float: right;">حداکثر توان مصرفی</label> <input type="text" name="field8"   id="field8" class="field-style field-split align-right "  />
+                   <label for="field9" style="float: right;">طول سیم</label> <input type="text" name="field9"   id="field9" class="field-style field-split align-right "  />
+            
+                </li>
+
+    
+           
+            <li>
+                   <label for="field10"style="float: right;">تعداد مورد نیاز</label> <input type="number" name="field10"   id="field10" class="field-style field-split align-right" />
+                   <label for="field12" style="float: right; ">اولویت</label>
+                   <select  name="field12" id="field12" style="font-size:16px; font-family: 'Bnazanin';"class=" field-style field-split align-right">
+                      <option value=""dir="rtl">انتخاب اولویت</option>
+                      <option value="1"dir="rtl">اولویت اول</option>
+                      <option value="2"dir="rtl">اولویت دوم</option>
+                      <option value="3"dir="rtl">اولویت سوم</option>
+                   </select>
+                </li>
+    
+           
+               <li>
+                   <label for="field11"style="float: right;">توضیحات</label><input type="text" name="field11"  id="field11"   class="field-style field-full align-none align-right" style="direction: rtl;" />
+                </li>
+                <li>
+                <input type="submit" value="ذخیره" name="submit3" id="submit3" />
+                </li>
+                </ul>
+                </form>
+                   
+        </div>
+     </div>
+      <hr>
+
+      <input type="checkbox" name="open-btn" id="open-deli-14" class="open-input">
+      <div class="open-contents">
+        <label for="open-deli-14" class="open-label">
+            فرش شوی
+        </label>
+        <div class="open-contents__inner">
+          
+
+
+
+            <form class="form-style-9" action="washing.php" method="post">
+                <ul>
+                <li>
+                   <label for="field1" style="float: right;">ابعاد </label> <input type="text" name="field1"   id="field1" class="field-style field-split align-right "  />
+                   <label for="field2"style="float: right;">رنگ</label> <input type="text" name="field2"   id="field2" class="field-style field-split align-right" />
+                    <label for="field3"style="float: right;">وزن</label> <input type="text" name="field3"   id="field3" class="field-style field-split align-right"  />
+                    <label for="field4"style="float: right;">برند</label>  <input type="text" name="field4"   id="field4" class="field-style field-split align-right" />
+                    <label for="field5"style="float: right;">توان مکش</label> <input type="text" name="field5"   id="field5" class="field-style field-split align-right" />
+     </li>
+                <li>
+                    <label for="field6"style="float: right;">ظرفیت مخزن آب</label> <input type="text" name="field6"   id="field6" class="field-style field-split align-right" />
+               
+                    <label for="field7" style="float: right;">طول سیم</label> <input type="text" name="field7"   id="field7" class="field-style field-split align-right "  />
+                   <label for="field8" style="float: right;">حداکثر توان مصرفی</label> <input type="text" name="field8"   id="field8" class="field-style field-split align-right "  />
+                   <label for="field9"style="float: right;">تعداد مورد نیاز</label> <input type="number" name="field9"   id="field9" class="field-style field-split align-right" />
+                   </li>
+                   <li>
+                   <label for="field11" style="float: right; ">اولویت</label>
+                   <select  name="field11" id="field11" style="font-size:16px; font-family: 'Bnazanin';"class=" field-style field-split align-right">
+                      <option value=""dir="rtl">انتخاب اولویت</option>
+                      <option value="1"dir="rtl">اولویت اول</option>
+                      <option value="2"dir="rtl">اولویت دوم</option>
+                      <option value="3"dir="rtl">اولویت سوم</option>
+                   </select>
+                </li>
+    
+           
+               <li>
+                   <label for="field10"style="float: right;">توضیحات</label><input type="text" name="field10"  id="field10"   class="field-style field-full align-none align-right" style="direction: rtl;" />
+                </li>
+                <li>
+                <input type="submit" value="ذخیره" name="submit4" id="submit4" />
+                </li>
+                </ul>
+                </form>
+    
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <hr>
+
+
+
+
+      <input type="checkbox" name="open-btn" id="open-deli-15" class="open-input">
+      <div class="open-contents">
+        <label for="open-deli-15" class="open-label">
+            مبل شوی
+        </label>
+        <div class="open-contents__inner">
+          
+
+            <form class="form-style-9" action="washing.php" method="post">
+                <ul>
+                <li>
+                   <label for="field1" style="float: right;">ابعاد </label> <input type="text" name="field1"   id="field1" class="field-style field-split align-right "  />
+                   <label for="field2"style="float: right;">رنگ</label> <input type="text" name="field2"   id="field2" class="field-style field-split align-right" />
+                    <label for="field3"style="float: right;">وزن</label> <input type="text" name="field3"   id="field3" class="field-style field-split align-right"  />
+                    <label for="field4"style="float: right;">برند</label>  <input type="text" name="field4"   id="field4" class="field-style field-split align-right" />
+                    <label for="field5"style="float: right;">توان مکش</label> <input type="text" name="field5"   id="field5" class="field-style field-split align-right" />
+     </li>
+                <li>
+                    <label for="field6"style="float: right;">ظرفیت مخزن آب</label> <input type="text" name="field6"   id="field6" class="field-style field-split align-right" />
+               
+                    <label for="field7" style="float: right;">طول سیم</label> <input type="text" name="field7"   id="field7" class="field-style field-split align-right "  />
+                   <label for="field8" style="float: right;">حداکثر توان مصرفی</label> <input type="text" name="field8"   id="field8" class="field-style field-split align-right "  />
+                   <label for="field9"style="float: right;">تعداد مورد نیاز</label> <input type="number" name="field9"   id="field9" class="field-style field-split align-right" />
+                  </li>
+                  <li>
+                   <label for="field11" style="float: right; ">اولویت</label>
+                   <select  name="field11" id="field11" style="font-size:16px; font-family: 'Bnazanin';"class=" field-style field-split align-right">
+                      <option value=""dir="rtl">انتخاب اولویت</option>
+                      <option value="1"dir="rtl">اولویت اول</option>
+                      <option value="2"dir="rtl">اولویت دوم</option>
+                      <option value="3"dir="rtl">اولویت سوم</option>
+                   </select>
+                </li>
+    
+           
+               <li>
+                   <label for="field10"style="float: right;">توضیحات</label><input type="text" name="field10"  id="field10"   class="field-style field-full align-none align-right" style="direction: rtl;" />
+                </li>
+                <li>
+                <input type="submit" value="ذخیره" name="submit5" id="submit5" />
+                </li>
+                </ul>
+                </form>
+    
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+
+      <hr>
+
+      <input type="checkbox" name="open-btn" id="open-deli-16" class="open-input">
+      <div class="open-contents">
+        <label for="open-deli-16" class="open-label">
+            سرامیک شوی
+        </label>
+        <div class="open-contents__inner">
+          
+            <form class="form-style-9" action="washing.php" method="post">
+                <ul>
+                <li>
+                   <label for="field1" style="float: right;">ابعاد </label> <input type="text" name="field1"   id="field1" class="field-style field-split align-right "  />
+                   <label for="field2"style="float: right;">رنگ</label> <input type="text" name="field2"   id="field2" class="field-style field-split align-right" />
+                    <label for="field3"style="float: right;">وزن</label> <input type="text" name="field3"   id="field3" class="field-style field-split align-right"  />
+                    <label for="field4"style="float: right;">برند</label>  <input type="text" name="field4"   id="field4" class="field-style field-split align-right" />
+                    <label for="field5"style="float: right;">توان مکش</label> <input type="text" name="field5"   id="field5" class="field-style field-split align-right" />
+     </li>
+                <li>
+                    <label for="field6"style="float: right;">ظرفیت مخزن آب</label> <input type="text" name="field6"   id="field6" class="field-style field-split align-right" />
+               
+                    <label for="field7" style="float: right;">طول سیم</label> <input type="text" name="field7"   id="field7" class="field-style field-split align-right "  />
+                   <label for="field8" style="float: right;">حداکثر توان مصرفی</label> <input type="text" name="field8"   id="field8" class="field-style field-split align-right "  />
+                   <label for="field9"style="float: right;">تعداد مورد نیاز</label> <input type="number" name="field9"   id="field9" class="field-style field-split align-right" />
+                  </li>
+                  <li>
+                   <label for="field11" style="float: right; ">اولویت</label>
+                   <select  name="field11" id="field11" style="font-size:16px; font-family: 'Bnazanin';"class=" field-style field-split align-right">
+                      <option value=""dir="rtl">انتخاب اولویت</option>
+                      <option value="1"dir="rtl">اولویت اول</option>
+                      <option value="2"dir="rtl">اولویت دوم</option>
+                      <option value="3"dir="rtl">اولویت سوم</option>
+                   </select>
+                </li>
+    
+           
+               <li>
+                   <label for="field10"style="float: right;">توضیحات</label><input type="text" name="field10"  id="field10"   class="field-style field-full align-none align-right" style="direction: rtl;" />
+                </li>
+                <li>
+                <input type="submit" value="ذخیره" name="submit6" id="submit6" />
+                </li>
+                </ul>
+                </form>
+    
+
+
+  
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+
+
+
+    </div>
+ </div>
+ 
+ 
+
+ <button type="button" class="collapsible" style="background-image: url(./photo/pages/vaccum.png);">ابزار نظافت</button>
+ <div class="content">
+   <div class="open-wrap">
+
+      <input type="checkbox" name="open-btn" id="open-deli-21" class="open-input">
+      <div class="open-contents">
+        <label for="open-deli-21" class="open-label">
+            جاروبرقی
+        </label>
+        <div class="open-contents__inner">
+
+
+
+         <form class="form-style-9" action="washing.php" method="post">
+            <ul>
+            <li>
+               <label for="field1" style="float: right;">ابعاد </label> <input type="text" name="field1"   id="field1" class="field-style field-split align-right "  />
+               <label for="field2"style="float: right;">رنگ</label> <input type="text" name="field2"   id="field2" class="field-style field-split align-right" />
+                <label for="field3"style="float: right;">وزن</label> <input type="text" name="field3"   id="field3" class="field-style field-split align-right"  />
+                <label for="field4"style="float: right;">برند</label>  <input type="text" name="field4"   id="field4" class="field-style field-split align-right" />
+                <label for="field5"style="float: right;">محدوده توان مصرفی</label> <input type="text" name="field5"   id="field5" class="field-style field-split align-right" />
+ </li>
+            <li>
+                <label for="field6"style="float: right;">محدوده طول کابل</label> <input type="text" name="field6"   id="field6" class="field-style field-split align-right" />          
+                <label for="field7" style="float: right;">نوع فیلتر خروجی</label> <input type="text" name="field7"   id="field7" class="field-style field-split align-right "  />
+               <label for="field8" style="float: right;">تعداد سری</label> <input type="text" name="field8"   id="field8" class="field-style field-split align-right "  />
+               <label for="field9"style="float: right;">تعداد پارویی</label> <input type="text" name="field9"   id="field9" class="field-style field-split align-right" />
+             </li>
+              <li>
+                <label for="field10" style="float: right;">طول سیم</label> <input type="text" name="field10"   id="field10" class="field-style field-split align-right "  />
+ 
+               <label for="field11" style="float: right;">محدوده میزان صدا</label> <input type="text" name="field11"   id="field11" class="field-style field-split align-right "  />
+              <label for="field12" style="float: right;">تعداد چرخ</label> <input type="text" name="field12"   id="field12" class="field-style field-split align-right "  />
+              <label for="field13"style="float: right;">شعاع عملکرد</label> <input type="text" name="field13"   id="field13" class="field-style field-split align-right" />          
+                <label for="field14" style="float: right;">توان مکش</label> <input type="text" name="field14"   id="field14" class="field-style field-split align-right "  />
+            
+            </li>
+             <li>
+              <label for="field15" style="float: right;">گنجایش مخزن جارو برقی</label> <input type="text" name="field15"   id="field15" class="field-style field-split align-right "  />
+
+
+             <label for="field16"style="float: right;">قدرت موتور</label> <input type="text" name="field16"   id="field16" class="field-style field-split align-right" />
+       <label for="field17"style="float: right;">تعداد مورد نیاز</label> <input type="number" name="field17"   id="field17" class="field-style field-split align-right" />
+       <label for="field19" style="float: right; ">اولویت</label>
+       <select  name="field19" id="field19" style="font-size:16px; font-family: 'Bnazanin';"class=" field-style field-split align-right">
+          <option value=""dir="rtl">انتخاب اولویت</option>
+          <option value="1"dir="rtl">اولویت اول</option>
+          <option value="2"dir="rtl">اولویت دوم</option>
+          <option value="3"dir="rtl">اولویت سوم</option>
+       </select>
+            </li>
+
+       
+           <li>
+               <label for="field18"style="float: right;">توضیحات</label><input type="text" name="field18"  id="field18"   class="field-style field-full align-none align-right" style="direction: rtl;" />
+            </li>
+            <li>
+            <input type="submit" value="ذخیره" name="submit7" id="submit7" />
+            </li>
+            </ul>
+            </form>
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <hr/>
+      <input type="checkbox" name="open-btn" id="open-deli-22" class="open-input">
+      <div class="open-contents">
+        <label for="open-deli-22" class="open-label">
+            جارو شارژی
+        </label>
+        <div class="open-contents__inner">
+          
+            <form class="form-style-9" action="washing.php" method="post">
+                <ul>
+                <li>
+                   <label for="field1" style="float: right;">ابعاد </label> <input type="text" name="field1"   id="field1" class="field-style field-split align-right "  />
+                   <label for="field2"style="float: right;">رنگ</label> <input type="text" name="field2"   id="field2" class="field-style field-split align-right" />
+                    <label for="field3"style="float: right;">وزن</label> <input type="text" name="field3"   id="field3" class="field-style field-split align-right"  />
+                    <label for="field4"style="float: right;">برند</label>  <input type="text" name="field4"   id="field4" class="field-style field-split align-right" />
+                    <label for="field5"style="float: right;">محدوده میزان شارژدهی باتری</label> <input type="text" name="field5"   id="field5" class="field-style field-split align-right" />
+     </li>
+                <li>
+                    <label for="field6"style="float: right;">نوع باتری</label> <input type="text" name="field6"   id="field6" class="field-style field-split align-right" />
+               
+                    <label for="field7" style="float: right;">ولتاژ باتری</label> <input type="text" name="field7"   id="field7" class="field-style field-split align-right "  />
+                   <label for="field8" style="float: right;">نوع اتصال به منبع تغذیه</label> <input type="text" name="field8"   id="field8" class="field-style field-split align-right "  />
+                   <label for="field9"style="float: right;">تعداد پارویی</label> <input type="text" name="field9"   id="field9" class="field-style field-split align-right" />
+               
+                </li>
+                 <li>
+                    <label for="field10" style="float: right;">ظرفیت مخزن</label> <input type="text" name="field10"   id="field10" class="field-style field-split align-right "  />
+ 
+                   <label for="field11" style="float: right;">قدرت موتور</label> <input type="text" name="field11"   id="field11" class="field-style field-split align-right "  />
+                  <label for="field12" style="float: right;">نحوه نصب</label> <input type="text" name="field12"   id="field12" class="field-style field-split align-right "  />
+                        
+                   <label for="field13"style="float: right;">تعداد مورد نیاز</label> <input type="number" name="field13"   id="field13" class="field-style field-split align-right" />
+                   <label for="field15" style="float: right; ">اولویت</label>
+                   <select  name="field15" id="field15" style="font-size:16px; font-family: 'Bnazanin';"class=" field-style field-split align-right">
+                      <option value=""dir="rtl">انتخاب اولویت</option>
+                      <option value="1"dir="rtl">اولویت اول</option>
+                      <option value="2"dir="rtl">اولویت دوم</option>
+                      <option value="3"dir="rtl">اولویت سوم</option>
+                   </select>
+                </li>
+    
+           
+               <li>
+                   <label for="field14"style="float: right;">توضیحات</label><input type="text" name="field14"  id="field14"   class="field-style field-full align-none align-right" style="direction: rtl;" />
+                </li>
+                <li>
+                <input type="submit" value="ذخیره" name="submit8" id="submit8" />
+                </li>
+                </ul>
+                </form>
+       
+        </div>
+      </div>
+      <hr>
+
+      <input type="checkbox" name="open-btn" id="open-deli-23" class="open-input">
+      <div class="open-contents">
+        <label for="open-deli-23" class="open-label">
+            اتو بخار
+        </label>
+        <div class="open-contents__inner">
+          
+
+
+            <form class="form-style-9" action="washing.php" method="post">
+                <ul>
+                <li>
+                   <label for="field1" style="float: right;">ابعاد </label> <input type="text" name="field1"   id="field1" class="field-style field-split align-right "  />
+                   <label for="field2"style="float: right;">رنگ</label> <input type="text" name="field2"   id="field2" class="field-style field-split align-right" />
+                    <label for="field3"style="float: right;">وزن</label> <input type="text" name="field3"   id="field3" class="field-style field-split align-right"  />
+                    <label for="field4"style="float: right;">برند</label>  <input type="text" name="field4"   id="field4" class="field-style field-split align-right" />
+                    <label for="field5"style="float: right;">مخزن دستگاه</label> <input type="text" name="field5"   id="field5" class="field-style field-split align-right" />
+             
+                </li>
+                <li>
+                    <label for="field6"style="float: right;">جنس کفه</label> <input type="text" name="field6"   id="field6" class="field-style field-split align-right" />
+  
+                    <label for="field7" style="float: right;">محدوده توان مصرفی</label> <input type="text" name="field7"   id="field7" class="field-style field-split align-right "  />
+                   <label for="field8" style="float: right;">بخاردهی لحظه ای</label> <input type="text" name="field8"   id="field8" class="field-style field-split align-right "  />
+                   <label for="field9" style="float: right;">بخاردهی پیوسته</label> <input type="text" name="field9"   id="field9" class="field-style field-split align-right "  />
+</li>
+ <li>
+    <label for="field10" style="float: right;">ظرفیت مخزن آب</label> <input type="text" name="field10"   id="field10" class="field-style field-split align-right "  />
+ 
+                   <label for="field11"style="float: right;">تعداد مورد نیاز</label> <input type="number" name="field11"   id="field11" class="field-style field-split align-right" />
+                   <label for="field13" style="float: right; ">اولویت</label>
+                   <select  name="field13" id="field13" style="font-size:16px; font-family: 'Bnazanin';"class=" field-style field-split align-right">
+                      <option value=""dir="rtl">انتخاب اولویت</option>
+                      <option value="1"dir="rtl">اولویت اول</option>
+                      <option value="2"dir="rtl">اولویت دوم</option>
+                      <option value="3"dir="rtl">اولویت سوم</option>
+                   </select>
+                </li>
+    
+           
+               <li>
+                   <label for="field12"style="float: right;">توضیحات</label><input type="text" name="field12"  id="field12"   class="field-style field-full align-none align-right" style="direction: rtl;" />
+                </li>
+                <li>
+                <input type="submit" value="ذخیره" name="submit9" id="submit9" />
+                </li>
+                </ul>
+                </form>
+   
+                
+    
+        </div>
+     </div>
+      <hr>
+
+      <input type="checkbox" name="open-btn" id="open-deli-24" class="open-input">
+      <div class="open-contents">
+        <label for="open-deli-24" class="open-label">
+            اتو پرسی
+        </label>
+        <div class="open-contents__inner">
+          
+
+
+
+            <form class="form-style-9" action="washing.php" method="post">
+                <ul>
+                <li>
+                   <label for="field1" style="float: right;">ابعاد </label> <input type="text" name="field1"   id="field1" class="field-style field-split align-right "  />
+                   <label for="field2"style="float: right;">رنگ</label> <input type="text" name="field2"   id="field2" class="field-style field-split align-right" />
+                    <label for="field3"style="float: right;">وزن</label> <input type="text" name="field3"   id="field3" class="field-style field-split align-right"  />
+                    <label for="field4"style="float: right;">برند</label>  <input type="text" name="field4"   id="field4" class="field-style field-split align-right" />
+                    <label for="field5"style="float: right;">مخزن دستگاه</label> <input type="text" name="field5"   id="field5" class="field-style field-split align-right" />
+
+                </li>
+                <li>
+                    <label for="field6"style="float: right;">جنس کفه</label> <input type="text" name="field6"   id="field6" class="field-style field-split align-right" />
+               
+                    <label for="field7" style="float: right;">محدوده توان مصرفی</label> <input type="text" name="field7"   id="field7" class="field-style field-split align-right "  />
+                    <label for="field8" style="float: right;">ظرفیت مخزن آب</label> <input type="text" name="field8"   id="field8" class="field-style field-split align-right "  />
+
+                   <label for="field9"style="float: right;">تعداد مورد نیاز</label> <input type="number" name="field9"   id="field9" class="field-style field-split align-right" />
+                  </li>
+                  <li>
+                   <label for="field11" style="float: right; ">اولویت</label>
+                   <select  name="field11" id="field11" style="font-size:16px; font-family: 'Bnazanin';"class=" field-style field-split align-right">
+                      <option value=""dir="rtl">انتخاب اولویت</option>
+                      <option value="1"dir="rtl">اولویت اول</option>
+                      <option value="2"dir="rtl">اولویت دوم</option>
+                      <option value="3"dir="rtl">اولویت سوم</option>
+                   </select>
+                </li>
+    
+           
+               <li>
+                   <label for="field10"style="float: right;">توضیحات</label><input type="text" name="field10"  id="field10"   class="field-style field-full align-none align-right" style="direction: rtl;" />
+                </li>
+                <li>
+                <input type="submit" value="ذخیره" name="submit10" id="submit10" />
+                </li>
+                </ul>
+                </form>
+    
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <hr>
+
+
+
+
+      <input type="checkbox" name="open-btn" id="open-deli-25" class="open-input">
+      <div class="open-contents">
+        <label for="open-deli-25" class="open-label">
+            اتو مسافرتی
+        </label>
+        <div class="open-contents__inner">
+          
+
+
+
+
+
+
+
+
+            <form class="form-style-9" action="washing.php" method="post">
+                <ul>
+                <li>
+                   <label for="field1" style="float: right;">ابعاد </label> <input type="text" name="field1"   id="field1" class="field-style field-split align-right "  />
+                   <label for="field2"style="float: right;">رنگ</label> <input type="text" name="field2"   id="field2" class="field-style field-split align-right" />
+                    <label for="field3"style="float: right;">وزن</label> <input type="text" name="field3"   id="field3" class="field-style field-split align-right"  />
+                    <label for="field4"style="float: right;">برند</label>  <input type="text" name="field4"   id="field4" class="field-style field-split align-right" />
+                    <label for="field5"style="float: right;">مخزن دستگاه</label> <input type="text" name="field5"   id="field5" class="field-style field-split align-right" />
+             
+                </li>
+                <li>
+                    <label for="field6"style="float: right;">جنس کفه</label> <input type="text" name="field6"   id="field6" class="field-style field-split align-right" />
+  
+                    <label for="field7" style="float: right;">محدوده توان مصرفی</label> <input type="text" name="field7"   id="field7" class="field-style field-split align-right "  />
+                   <label for="field8" style="float: right;">بخاردهی لحظه ای</label> <input type="text" name="field8"   id="field8" class="field-style field-split align-right "  />
+                   <label for="field9" style="float: right;">بخاردهی پیوسته</label> <input type="text" name="field9"   id="field9" class="field-style field-split align-right "  />
+</li>
+ <li>
+    <label for="field10" style="float: right;">ظرفیت مخزن آب</label> <input type="text" name="field10"   id="field10" class="field-style field-split align-right "  />
+ 
+                   <label for="field11"style="float: right;">تعداد مورد نیاز</label> <input type="number" name="field11"   id="field11" class="field-style field-split align-right" />
+                   <label for="field13" style="float: right; ">اولویت</label>
+                   <select  name="field13" id="field13" style="font-size:16px; font-family: 'Bnazanin';"class=" field-style field-split align-right">
+                      <option value=""dir="rtl">انتخاب اولویت</option>
+                      <option value="1"dir="rtl">اولویت اول</option>
+                      <option value="2"dir="rtl">اولویت دوم</option>
+                      <option value="3"dir="rtl">اولویت سوم</option>
+                   </select>
+                </li>
+    
+           
+               <li>
+                   <label for="field12"style="float: right;">توضیحات</label><input type="text" name="field12"  id="field12"   class="field-style field-full align-none align-right" style="direction: rtl;" />
+                </li>
+                <li>
+                <input type="submit" value="ذخیره" name="submit11" id="submit11" />
+                </li>
+                </ul>
+                </form>
+   
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+
+      <hr>
+
+      <input type="checkbox" name="open-btn" id="open-deli-26" class="open-input">
+      <div class="open-contents">
+        <label for="open-deli-26" class="open-label">
+            بند رخت
+        </label>
+        <div class="open-contents__inner">
+          
+
+            <form class="form-style-9" action="washing.php" method="post">
+                <ul>
+                   <li>
+                      <label for="field1" style="float: right;">ابعاد </label> <input type="text" name="field1"   id="field1" class="field-style field-split align-right "  />
+                      <label for="field2"style="float: right;">رنگ</label> <input type="text" name="field2"   id="field2" class="field-style field-split align-right" />
+                       <label for="field3"style="float: right;">وزن</label> <input type="text" name="field3"   id="field3" class="field-style field-split align-right"  />
+                       <label for="field4"style="float: right;">برند</label>  <input type="text" name="field4"   id="field4" class="field-style field-split align-right" />
+                       <label for="field5"style="float: right;">جنس</label>  <input type="text" name="field5"   id="field5" class="field-style field-split align-right" />
+                    <label for="field6"style="float: right;">تعداد مورد نیاز</label> <input type="number" name="field6"   id="field6" class="field-style field-split align-right" /></li>
+<li>
+    <label for="field8" style="float: right; ">اولویت</label>
+    <select  name="field8" id="field8" style="font-size:16px; font-family: 'Bnazanin';"class=" field-style field-split align-right">
+       <option value=""dir="rtl">انتخاب اولویت</option>
+       <option value="1"dir="rtl">اولویت اول</option>
+       <option value="2"dir="rtl">اولویت دوم</option>
+       <option value="3"dir="rtl">اولویت سوم</option>
+    </select>
+</li>
+                <li>
+                   <label for="field7"style="float: right;">توضیحات</label><input type="text" name="field7"  id="field7"   class="field-style field-full align-none align-right" style="direction: rtl;" />
+                </li>
+                <li>
+                <input type="submit" value="ذخیره" name="submit12" id="submit12" />
+                </li>
+                </ul>
+                </form>
+    
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <hr>
+
+      <input type="checkbox" name="open-btn" id="open-deli-27" class="open-input">
+      <div class="open-contents">
+        <label for="open-deli-27" class="open-label">
+            میز اتو
+        </label>
+        <div class="open-contents__inner">
+          
+
+            <form class="form-style-9" action="washing.php" method="post">
+                <ul>
+                   <li>
+                      <label for="field1" style="float: right;">ابعاد </label> <input type="text" name="field1"   id="field1" class="field-style field-split align-right "  />
+                      <label for="field2"style="float: right;">رنگ</label> <input type="text" name="field2"   id="field2" class="field-style field-split align-right" />
+                       <label for="field3"style="float: right;">وزن</label> <input type="text" name="field3"   id="field3" class="field-style field-split align-right"  />
+                       <label for="field4"style="float: right;">برند</label>  <input type="text" name="field4"   id="field4" class="field-style field-split align-right" />
+                       <label for="field5"style="float: right;">جنس</label>  <input type="text" name="field5"   id="field5" class="field-style field-split align-right" />
+                       <label for="field6"style="float: right;">طول پایه</label>  <input type="text" name="field6"   id="field6" class="field-style field-split align-right" />
+                                        
+                      </li>    
+                       <li>
+                    <label for="field7"style="float: right;">تعداد مورد نیاز</label> <input type="number" name="field7"   id="field7" class="field-style field-split align-right" />
+                    <label for="field9" style="float: right; ">اولویت</label>
+                    <select  name="field9" id="field9" style="font-size:16px; font-family: 'Bnazanin';"class=" field-style field-split align-right">
+                       <option value=""dir="rtl">انتخاب اولویت</option>
+                       <option value="1"dir="rtl">اولویت اول</option>
+                       <option value="2"dir="rtl">اولویت دوم</option>
+                       <option value="3"dir="rtl">اولویت سوم</option>
+                    </select>
+                </li>
+                <li>
+                   <label for="field8"style="float: right;">توضیحات</label><input type="text" name="field8"  id="field8"   class="field-style field-full align-none align-right" style="direction: rtl;" />
+                </li>
+                <li>
+                <input type="submit" value="ذخیره" name="submit13" id="submit13" />
+                </li>
+                </ul>
+                </form>
+    
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+<hr>
+      <input type="checkbox" name="open-btn" id="open-deli-28" class="open-input">
+      <div class="open-contents">
+        <label for="open-deli-28" class="open-label">
+            کاور وسایل برقی
+        </label>
+        <div class="open-contents__inner">
+          
+
+            <form class="form-style-9" action="washing.php" method="post">
+                <ul>
+                   <li>
+                      <label for="field1" style="float: right;">ابعاد </label> <input type="text" name="field1"   id="field1" class="field-style field-split align-right "  />
+                      <label for="field2"style="float: right;">رنگ</label> <input type="text" name="field2"   id="field2" class="field-style field-split align-right" />
+                       <label for="field3"style="float: right;">وزن</label> <input type="text" name="field3"   id="field3" class="field-style field-split align-right"  />
+                       <label for="field4"style="float: right;">برند</label>  <input type="text" name="field4"   id="field4" class="field-style field-split align-right" />
+                       <label for="field5"style="float: right;">جنس</label>  <input type="text" name="field5"   id="field5" class="field-style field-split align-right" />
+                       <label for="field6"style="float: right;">شامل</label>  <input type="text" name="field6"   id="field6" class="field-style field-split align-right" />
+                                        
+                      </li>    
+                       <li>
+                    <label for="field7"style="float: right;">تعداد مورد نیاز</label> <input type="number" name="field7"   id="field7" class="field-style field-split align-right" />
+                    <label for="field9" style="float: right; ">اولویت</label>
+                    <select  name="field9" id="field9" style="font-size:16px; font-family: 'Bnazanin';"class=" field-style field-split align-right">
+                       <option value=""dir="rtl">انتخاب اولویت</option>
+                       <option value="1"dir="rtl">اولویت اول</option>
+                       <option value="2"dir="rtl">اولویت دوم</option>
+                       <option value="3"dir="rtl">اولویت سوم</option>
+                    </select>
+                
+                </li>
+                <li>
+                   <label for="field8"style="float: right;">توضیحات</label><input type="text" name="field8"  id="field8"   class="field-style field-full align-none align-right" style="direction: rtl;" />
+                </li>
+                <li>
+                <input type="submit" value="ذخیره" name="submit14" id="submit14" />
+                </li>
+                </ul>
+                </form>
+    
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <hr>
+      <input type="checkbox" name="open-btn" id="open-deli-29" class="open-input">
+      <div class="open-contents">
+        <label for="open-deli-29" class="open-label">
+            کاور مبل
+        </label>
+        <div class="open-contents__inner">
+          
+
+            <form class="form-style-9" action="washing.php" method="post">
+                <ul>
+                   <li>
+                      <label for="field1" style="float: right;">ابعاد </label> <input type="text" name="field1"   id="field1" class="field-style field-split align-right "  />
+                      <label for="field2"style="float: right;">رنگ</label> <input type="text" name="field2"   id="field2" class="field-style field-split align-right" />
+                       <label for="field3"style="float: right;">وزن</label> <input type="text" name="field3"   id="field3" class="field-style field-split align-right"  />
+                       <label for="field4"style="float: right;">برند</label>  <input type="text" name="field4"   id="field4" class="field-style field-split align-right" />
+                       <label for="field5"style="float: right;">جنس</label>  <input type="text" name="field5"   id="field5" class="field-style field-split align-right" />
+                       <label for="field6"style="float: right;">شامل</label>  <input type="text" name="field6"   id="field6" class="field-style field-split align-right" />
+                                        
+                      </li>    
+                       <li>
+                    <label for="field7"style="float: right;">تعداد مورد نیاز</label> <input type="number" name="field7"   id="field7" class="field-style field-split align-right" />
+                    <label for="field9" style="float: right; ">اولویت</label>
+                    <select  name="field9" id="field9" style="font-size:16px; font-family: 'Bnazanin';"class=" field-style field-split align-right">
+                       <option value=""dir="rtl">انتخاب اولویت</option>
+                       <option value="1"dir="rtl">اولویت اول</option>
+                       <option value="2"dir="rtl">اولویت دوم</option>
+                       <option value="3"dir="rtl">اولویت سوم</option>
+                    </select>
+                </li>
+                <li>
+                   <label for="field8"style="float: right;">توضیحات</label><input type="text" name="field8"  id="field8"   class="field-style field-full align-none align-right" style="direction: rtl;" />
+                </li>
+                <li>
+                <input type="submit" value="ذخیره" name="submit15" id="submit15" />
+                </li>
+                </ul>
+                </form>
+    
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <hr>
+      <input type="checkbox" name="open-btn" id="open-deli-210" class="open-input">
+      <div class="open-contents">
+        <label for="open-deli-210" class="open-label">
+            جارو دستی
+        </label>
+        <div class="open-contents__inner">
+          
+
+            <form class="form-style-9" action="washing.php" method="post">
+                <ul>
+                   <li>
+                      <label for="field1" style="float: right;">ابعاد </label> <input type="text" name="field1"   id="field1" class="field-style field-split align-right "  />
+                      <label for="field2"style="float: right;">رنگ</label> <input type="text" name="field2"   id="field2" class="field-style field-split align-right" />
+                       <label for="field3"style="float: right;">وزن</label> <input type="text" name="field3"   id="field3" class="field-style field-split align-right"  />
+                       <label for="field4"style="float: right;">برند</label>  <input type="text" name="field4"   id="field4" class="field-style field-split align-right" />
+                       <label for="field5"style="float: right;">جنس</label>  <input type="text" name="field5"   id="field5" class="field-style field-split align-right" />
+                       <label for="field6"style="float: right;">طول دسته</label>  <input type="text" name="field6"   id="field6" class="field-style field-split align-right" />
+                                        
+                      </li>    
+                       <li>
+                        <label for="field7"style="float: right;">امکانات تعویض</label>  <input type="text" name="field7"   id="field7" class="field-style field-split align-right" />
+                        <label for="field8"style="float: right;">ابعاد سری</label>  <input type="text" name="field8"   id="field8" class="field-style field-split align-right" />
+                        <label for="field9"style="float: right;">تعداد برس</label>  <input type="text" name="field9"   id="field9" class="field-style field-split align-right" />
+               
+                    <label for="field10"style="float: right;">تعداد مورد نیاز</label> <input type="number" name="field10"   id="field10" class="field-style field-split align-right" />
+                    <label for="field12" style="float: right; ">اولویت</label>
+                    <select  name="field12" id="field12" style="font-size:16px; font-family: 'Bnazanin';"class=" field-style field-split align-right">
+                       <option value=""dir="rtl">انتخاب اولویت</option>
+                       <option value="1"dir="rtl">اولویت اول</option>
+                       <option value="2"dir="rtl">اولویت دوم</option>
+                       <option value="3"dir="rtl">اولویت سوم</option>
+                    </select>
+                </li>
+                <li>
+                   <label for="field11"style="float: right;">توضیحات</label><input type="text" name="field11"  id="field11"   class="field-style field-full align-none align-right" style="direction: rtl;" />
+                </li>
+                <li>
+                <input type="submit" value="ذخیره" name="submit16" id="submit16" />
+                </li>
+                </ul>
+                </form>
+    
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <hr>
+      <input type="checkbox" name="open-btn" id="open-deli-211" class="open-input">
+      <div class="open-contents">
+        <label for="open-deli-211" class="open-label">
+            جارو و خاک انداز
+        </label>
+        <div class="open-contents__inner">
+          
+
+            <form class="form-style-9" action="washing.php" method="post">
+                <ul>
+                   <li>
+                      <label for="field1" style="float: right;">ابعاد </label> <input type="text" name="field1"   id="field1" class="field-style field-split align-right "  />
+                      <label for="field2"style="float: right;">رنگ</label> <input type="text" name="field2"   id="field2" class="field-style field-split align-right" />
+                       <label for="field3"style="float: right;">وزن</label> <input type="text" name="field3"   id="field3" class="field-style field-split align-right"  />
+                       <label for="field4"style="float: right;">برند</label>  <input type="text" name="field4"   id="field4" class="field-style field-split align-right" />
+                       <label for="field5"style="float: right;">جنس</label>  <input type="text" name="field5"   id="field5" class="field-style field-split align-right" />
+                       <label for="field6"style="float: right;">طول دسته</label>  <input type="text" name="field6"   id="field6" class="field-style field-split align-right" />
+                                        
+                      </li>    
+                       <li>
+                        <label for="field7"style="float: right;">امکانات تعویض</label>  <input type="text" name="field7"   id="field7" class="field-style field-split align-right" />
+                        <label for="field8"style="float: right;">ابعاد سری</label>  <input type="text" name="field8"   id="field8" class="field-style field-split align-right" />
+                        <label for="field9"style="float: right;">تعداد برس</label>  <input type="text" name="field9"   id="field9" class="field-style field-split align-right" />
+               
+                    <label for="field10"style="float: right;">تعداد مورد نیاز</label> <input type="number" name="field10"   id="field10" class="field-style field-split align-right" />
+                    <label for="field12" style="float: right; ">اولویت</label>
+                    <select  name="field12" id="field12" style="font-size:16px; font-family: 'Bnazanin';"class=" field-style field-split align-right">
+                       <option value=""dir="rtl">انتخاب اولویت</option>
+                       <option value="1"dir="rtl">اولویت اول</option>
+                       <option value="2"dir="rtl">اولویت دوم</option>
+                       <option value="3"dir="rtl">اولویت سوم</option>
+                    </select>
+                
+                </li>
+                <li>
+                   <label for="field11"style="float: right;">توضیحات</label><input type="text" name="field11"  id="field11"   class="field-style field-full align-none align-right" style="direction: rtl;" />
+                </li>
+                <li>
+                <input type="submit" value="ذخیره" name="submit17" id="submit17" />
+                </li>
+                </ul>
+                </form>
+    
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <hr>
+      <input type="checkbox" name="open-btn" id="open-deli-212" class="open-input">
+      <div class="open-contents">
+        <label for="open-deli-212" class="open-label">
+            تی
+        </label>
+        <div class="open-contents__inner">
+          
+
+            <form class="form-style-9" action="washing.php" method="post">
+                <ul>
+                   <li>
+                      <label for="field1" style="float: right;">ابعاد </label> <input type="text" name="field1"   id="field1" class="field-style field-split align-right "  />
+                      <label for="field2"style="float: right;">رنگ</label> <input type="text" name="field2"   id="field2" class="field-style field-split align-right" />
+                       <label for="field3"style="float: right;">وزن</label> <input type="text" name="field3"   id="field3" class="field-style field-split align-right"  />
+                       <label for="field4"style="float: right;">برند</label>  <input type="text" name="field4"   id="field4" class="field-style field-split align-right" />
+                       <label for="field5"style="float: right;">جنس دسته</label>  <input type="text" name="field5"   id="field5" class="field-style field-split align-right" />
+                       <label for="field6"style="float: right;">طول دسته</label>  <input type="text" name="field6"   id="field6" class="field-style field-split align-right" />
+                                        
+                      </li>    
+                       <li>
+                        <label for="field7"style="float: right;">امکانات تعویض</label>  <input type="text" name="field7"   id="field7" class="field-style field-split align-right" />
+                        <label for="field8"style="float: right;">ابعاد سری</label>  <input type="text" name="field8"   id="field8" class="field-style field-split align-right" />
+                        <label for="field9"style="float: right;">جنس سری</label>  <input type="text" name="field9"   id="field9" class="field-style field-split align-right" />
+                        <label for="field10"style="float: right;">دارای مخزن</label>  <input type="text" name="field10"   id="field10" class="field-style field-split align-right" />
+      
+                    <label for="field11"style="float: right;">تعداد مورد نیاز</label> <input type="number" name="field11"   id="field11" class="field-style field-split align-right" />
+                    <label for="field13" style="float: right; ">اولویت</label>
+                    <select  name="field13" id="field13" style="font-size:16px; font-family: 'Bnazanin';"class=" field-style field-split align-right">
+                       <option value=""dir="rtl">انتخاب اولویت</option>
+                       <option value="1"dir="rtl">اولویت اول</option>
+                       <option value="2"dir="rtl">اولویت دوم</option>
+                       <option value="3"dir="rtl">اولویت سوم</option>
+                    </select>
+                
+                </li>
+                <li>
+                   <label for="field12"style="float: right;">توضیحات</label><input type="text" name="field12"  id="field12"   class="field-style field-full align-none align-right" style="direction: rtl;" />
+                </li>
+                <li>
+                <input type="submit" value="ذخیره" name="submit18" id="submit18" />
+                </li>
+                </ul>
+                </form>
+    
+
+
+
+
+
+
+
+        </div>
+      </div>
+
+
+    </div>
+ </div>
+ 
+
+    <script src="./javascript/bedroom.js"></script>
+  </body>
