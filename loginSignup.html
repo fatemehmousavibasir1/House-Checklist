@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fa" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/loginsignupp.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <title>ثبت نام</title>
+</head>
+<style>
+
+</style>
+<body>
+  <img 
+  <img class="img" src="photo/1backg.jpg" style="  height: 98%; top:4px; ">
+    <div class="wrapper">
+        <div class="title-text">
+          <div class="title login">ورود</div>
+          <div class="title signup">ثبت نام</div>
+        </div>
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked>
+            <input type="radio" name="slide" id="signup">
+            <label for="login" class="slide login">ورود</label>
+            <label for="signup" class="slide signup">ثبت نام</label>
+            <div class="slider-tab"></div>
+          </div>
+          <div class="form-inner">
+        <form action="loginphp.php" class="login" name="loginPage" method="POST">
+              <pre>
+              </pre>
+              <div class="field">
+                <input type="text" dir="rtl"placeholder="  نام کاربری" required name="usernamel" id="usernamel">
+              </div>
+              <div class="field">
+                <input type="password" dir="rtl"placeholder="   رمز عبور" required name="passwordl" id="passwordl">
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="ورود" id="submit1" name="submit1">
+              </div>
+              <div class="signup-link">برای ایجاد حساب کاربری <a href="">ثبت نام کنید</a></div>
+            </form>
+            <form method="post" action="form.php">
+              <div class="field">
+                <label for="name"></label>
+                <input type="text" dir="rtl" required name="name" id="name" placeholder="   نام و نام خانوادگی" >
+              </div>
+              <div class="field">
+                <label for="username"></label>
+                <input type="text" dir="rtl" required name="username"id="username"placeholder="   نام کاربری"  >
+              </div>
+              <div class="field">
+                <label for="phone"></label>
+                <input type="text"dir="rtl" required name="phone"id="phone"placeholder="   تلفن همراه" maxlength="11"  >
+              </div>   
+               <div class="field">
+                <label for="email"></label>
+                <input type="email" dir="rtl" required name="email"id="email"placeholder=" ایمیل "  >
+              </div>
+              <div class="field">
+                <label for="pasword"></label>
+                <input type="password" dir="rtl" required name="password"id="password"placeholder="   رمز عبور"  >
+              </div>
+          
+              <div >
+                <input type="radio" id="role1"name="role" value="1" style="display:inline; float:right; margin-bottom: 10px; height: 25px;"><label style="padding-left:20px; float:right;padding-right:5px; font-size:18px;"for="role1">کاربر</label>
+                <input type="radio" id="role2"name="role" value="2"style="display:inline; float:right;height: 25px;"><label for="role2"style="padding-left:20px; float:right;padding-right:5px;font-size:18px;">فروشنده</label>
+                <input type="radio" id="role3"name="role" value="3"style="display:inline; float:right;height: 25px;"><label for="role3"style="padding-left:20px; float:right;padding-right:5px;font-size:18px;">ادمین</label>
+               </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="ثبت نام" id="submit" name="submit"></a>
+              </div>
+              <div class="signup-link">آیا حساب کاربری دارید؟ <a href="">ورود</a></div>
+            </form>
+            </div>
+        </div>
+      </div>
+
+
+
+<script src="./javascript/loginsignup.js"></script>
+</body>
+</html>
