@@ -1,0 +1,7 @@
+@font-face{
+    font-family: "Bnazanin";
+    src:url("../font/nazanin/Far_Nazanin.ttf") format("truetype");
+}
+p{
+    font-family: 'Bnazanin';
+}
