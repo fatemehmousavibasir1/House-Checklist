@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bedroom.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/navigationbar.css">
+    <link rel="stylesheet"
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>به روز رسانی</title>
+   </head>
+   <style>
+   hr{
+      height: 2px;
+      background-color: #bfbeb9;
+      border: none;
+      width: 1150px;
+      margin-left: 120px;
+  }</style>
+
+<body>
+<?php 
+       session_start();
+       $loginuser_id=$_SESSION['loginuser_id'];
+       
+        $_SESSION['loginuser_id']= $loginuser_id;
+          ?>
+ <?php
+
+   $servername = "localhost";
+
+   $username = "root"; 
+
+    $password = ""; 
+
+    $dbname = "checklist"; 
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+   if ($conn->connect_error) {
+
+    die("Connection failed: " . $conn->connect_error);
+
+  }
+  if($loginuser_id=="" ){
+  
+    $sql= "SELECT * FROM logintablestore WHERE ID='1' ";
+    $result = mysqli_query($conn,$sql);
+    if (mysqli_num_rows($result) > 0) {
+        
+      while($row6 = mysqli_fetch_assoc($result)) {
+    
+    
+        $loginuser_id=$row6["User_ID"];
+      
+      }
+    
+    }
+    }
+?> 
+
+
+ <?php
+
+   $servername = "localhost";
+
+   $username = "root"; 
+
+    $password = ""; 
+
+    $dbname = "checklist"; 
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+   if ($conn->connect_error) {
+
+    die("Connection failed: " . $conn->connect_error);
+
+  }
+  if($loginuser_id=="" ){
+  
+    $sql= "SELECT * FROM logintablestore WHERE ID='1' ";
+    $result = mysqli_query($conn,$sql);
+    if (mysqli_num_rows($result) > 0) {
+        
+      while($row6 = mysqli_fetch_assoc($result)) {
+    
+    
+        $loginuser_id=$row6["User_ID"];
+      
+      }
+    
+    }
+    }
+?> 
+<nav class="navbar" >
+      <!-- LOGO -->
+      <a href="mainpage.php?id="<?php echo $loginuser_id ?>"><div class="logo"><img src="../photo/logo4.png" style="width:35px;margin-left:15px;"></div></a>
+     <div style=" margin-right: 42%;"><a href="./storeprofile.php" ><img src="../photo/person.png"style="width:8%; float:left; padding-right:10px;"></a></div>
+      
+      <!-- NAVIGATION MENU -->
+      <ul class="nav-links">
+  
+        <!-- USING CHECKBOX HACK -->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+  
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+  
+          <li><a href="./aboutus.php">درباره ما</a></li>
+
+
+          <li><a href="mainpage.php?id="<?php echo $loginuser_id ?>">خانه</a></li>
+        </div>
+      </ul>
+    </nav> 
+
+<?php 
+include "config.php";
+
+if (isset($_POST['update'])) {
+    $newid = $_GET['id'];
+   $name = $_POST['name'];
+   $Parent_ID= $_POST['Parent_ID'];
+   $brand = $_POST['brand'];
+   $Price = $_POST['Price']; 
+   $Date = $_POST['Date']; 
+   $sql = "UPDATE `list of stores product` SET `name`='$name',Parent_ID='$Parent_ID',brand='$brand',Price='$Price',`Date`='$Date' WHERE ID='$user_id' "; 
+   $result = $conn->query($sql); 
+   if ($result == TRUE) {
+       echo "Record updated successfully.";
+   }else{
+       echo "Error:" . $sql . "<br>";
+   }
+} 
+if (isset($_GET['id'])) {
+    $user_id = $_GET['id']; 
+    $newid = $_GET['id']; 
+    $sql = "SELECT * FROM `list of stores product`  WHERE ID='$user_id'";
+    $result = $conn->query($sql); 
+    if ($result->num_rows > 0) {        
+        while ($row = $result->fetch_assoc()) {
+            $id = $row['ID'];
+            $name = $row['name'];
+             $Store_ID = $row['Store_ID'];
+            $Parent_ID = $row['Parent_ID'];
+            $brand = $row['brand'];
+            $Price  = $row['Price'];
+            $Date = $row['Date'];
+           
+        } 
+    ?>
+<li style="padding-top:100px" ></li>
+
+<form class="form-style-9"action="editstore.php?id=<?php echo $user_id;?>" method="post" >
+  <ul>
+   <li>
+      <label for="name" style="float: right; font-family:'Bnazanin';">نام محصول </label> <input type="text" name="name" id="name" style="direction:rtl;"style="text-align:right;font-family:'Bnazanin'; font-size:17px;"class="field-style field-split align-right " value="<?php echo $name; ?>"  />
+       <label for="brand"style="float: right; padding-right:30px;font-family:'Bnazanin'">برند</label>  <input type="text" name="brand" style="direction:rtl;" id="brand" style="text-align:right;font-family:'Bnazanin'; font-size:17px;" class="field-style field-split align-right"  value="<?php echo $brand; ?>"/>
+       <label for="Price"style="float: right;font-family:'Bnazanin'">قیمت</label> <input type="text" name="Price"  style="direction:rtl;" id="Price"style="text-align:right;font-family:'Bnazanin'; font-size:17px;" class="field-style field-split align-right" value="<?php echo $Price; ?>" />
+       <label for="Date"style="float: right;font-family:'Bnazanin'">تاریخ</label> <input type="date" name="Date" style="direction:rtl;"  id="Date" style="text-align:right;font-family:'Bnazanin'; font-size:17px;"class="field-style  align-right" value="<?php echo $Date; ?>" />
+  
+
+       <div class="card col-md-8">
+									      <div class=" col-md-8">
+									        <label for="Parent_ID" style="float: right;">دسته بندی </label>
+									        <div class="">
+									          <select name="Parent_ID" style="width: 20%; padding: 0.375rem 0.75rem; float: right;   border-color: #ced4da;">
+									            <option value=""style="direction: rtl;">دسته محصول را انتخاب کنید </option>
+									            <?php $query=mysqli_query($conn,"SELECT * From `parent group`");
+									            while($row=mysqli_fetch_array($query))
+									            { 
+									             
+                                                   if($Parent_ID== $row['Parent_ID']){ ?>
+                                                 <option style="direction: rtl; font-family:'Bnazanin';  font-size:17px;"selected value="<?php echo $row['Parent_ID'];?>"><?php echo $row['Parent_Name'];?></option>
+	                                                 <?php							             
+                                                     }
+                                                  else{?>
+									              <option style="direction: rtl; font-family:'Bnazanin'; font-size:17px;" value="<?php echo $row['Parent_ID'];?>"><?php echo $row['Parent_Name'];?></option>
+									              <?php 
+									           }
+                                                } ?>
+									          </select>
+									        </div>
+									      </div>
+     </div>
+
+
+
+   
+
+   </li>
+
+   <li  style="margin-left:30px;">
+                <input type="submit" value="بازگشت" name="back" style="font-family: 'Bnazanin'; font-size:17px; ">
+   
+            <input type="submit" value="ذخیره" name="update" style="font-family: 'Bnazanin'; font-size:17px; ">
+
+          </li>
+                                            </ul>
+</form>
+   
+
+        </body>
+        </html> 
+    <?php
+    } else{ 
+        header('Location: view.php');
+    } 
+}
+?> 
